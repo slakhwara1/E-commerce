@@ -1,0 +1,15 @@
+<div class="row mx-auto">
+
+  <h5 class="mt-4">Recently viewed</h5>
+  <hr>
+  <div class="row scroll-horizontal">
+    <div class="col-md-3 col-sm-3 col-xs-3 border-item" *ngFor="let product of featuredProducts">
+      <div class="margin-top mx-auto">
+        <div class="product-catalog">
+          <app-product></app-product>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
