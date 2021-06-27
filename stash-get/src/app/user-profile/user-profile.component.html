@@ -1,2 +1,13 @@
-<router-outlet></router-outlet>
-<h1>This is a user profile component</h1>
+<div class="row ms-5 mt-5">
+  <div class="col-md-3">
+    <img src="{{ userImgUrl }}" class="img-thumbnail">
+    <app-list-group></app-list-group>
+  </div>
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-7">
+    <app-user-profile-detail></app-user-profile-detail>
+  </div>
+  <div class="col-md-1">
+  </div>
+</div>

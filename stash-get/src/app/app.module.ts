@@ -22,6 +22,8 @@ import { ProductCategoryGroupComponent } from './shared/product-category-group/p
 import { ProductSearchComponent } from './shared/product-search/product-search.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { ListGroupComponent } from './shared/list-group/list-group.component';
+import { UserProfileDetailComponent } from './user-profile/user-profile-detail/user-profile-detail.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { CommonModule } from '@angular/common';
     UserWishlistComponent,
     ProductCategoryComponent,
     ProductCategoryGroupComponent,
-    ProductSearchComponent
+    ProductSearchComponent,
+    ListGroupComponent,
+    UserProfileDetailComponent
   ],
   imports: [
     BrowserModule,

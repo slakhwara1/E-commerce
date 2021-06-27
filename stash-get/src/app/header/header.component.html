@@ -1,23 +1,24 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Stash Get</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" [routerLink]="['/']">Stash Get</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <app-product-category-group></app-product-category-group>
-        <li>
+        <li class="ms-3">
           <app-product-search></app-product-search>
         </li>
-        <li class="nav-item ms-5">
-          <a class="nav-link active" aria-current="page" [routerLink]="['/profile']">My Profile</a>
+        <li class="nav-item ms-4">
+          <a class="nav-link" aria-current="page" [routerLink]="['/profile']">My Profile</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/orders']">Orders</a>
         </li>
-        <li class="nav-item ms-5">
-          <a class="nav-link" href="#">Logout</a>
+        <li class="nav-item ms-4">
+          <a class="nav-link" [routerLink]="['/']">Logout</a>
         </li>
       </ul>
     </div>
