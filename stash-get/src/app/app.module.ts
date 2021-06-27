@@ -14,6 +14,14 @@ import { ProductReviewsComponent } from './shared/product-reviews/product-review
 import { ProductOverlayComponent } from './shared/product-overlay/product-overlay.component';
 import { ProductCardComponent } from './shared/product-card/product-card.component';
 import { ProductFilterComponent } from './shared/product-filter/product-filter.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { UserOrdersComponent } from './user-orders/user-orders.component';
+import { UserWishlistComponent } from './user-wishlist/user-wishlist.component';
+import { ProductCategoryComponent } from './shared/product-category/product-category.component';
+import { ProductCategoryGroupComponent } from './shared/product-category-group/product-category-group.component';
+import { ProductSearchComponent } from './shared/product-search/product-search.component';
+import { RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,11 +36,19 @@ import { ProductFilterComponent } from './shared/product-filter/product-filter.c
     ProductReviewsComponent,
     ProductOverlayComponent,
     ProductCardComponent,
-    ProductFilterComponent
+    ProductFilterComponent,
+    UserProfileComponent,
+    UserOrdersComponent,
+    UserWishlistComponent,
+    ProductCategoryComponent,
+    ProductCategoryGroupComponent,
+    ProductSearchComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

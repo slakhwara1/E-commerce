@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-product',
@@ -7,14 +7,9 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  productUrl = 'https://www.mountaingoatsoftware.com/uploads/blog/2016-09-06-what-is-a-product.png';
-
-  @ViewChild('quickView') quickViewButton: any;
-  showButton = false;
-
   constructor() { }
 
-  ngOnInit(): void {  
+  ngOnInit(): void {
   }
 
 
