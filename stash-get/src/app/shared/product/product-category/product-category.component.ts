@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MatMenu, MatMenuTrigger } from '@angular/material/menu';
 
 @Component({
   selector: 'app-product-category',
@@ -12,6 +13,10 @@ export class ProductCategoryComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  openCategoryMenu(menuTrigger: MatMenuTrigger) {
+    menuTrigger.openMenu();
   }
 
 }

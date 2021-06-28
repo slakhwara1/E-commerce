@@ -2,6 +2,8 @@
   <img src="{{ productUrl }}" class="card-img-top">
   <div class="card-body">
     <h5 class="card-title">Product title</h5>
-    <button type="button" class="btn btn-outline-primary" *ngIf="showButton">Quick View</button>
+    <button type="button" class="btn btn-outline-primary" *ngIf="showButton" (click)="openDialog()">
+      Quick View
+    </button>
   </div>
 </div>

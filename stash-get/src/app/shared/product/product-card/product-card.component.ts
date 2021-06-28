@@ -1,4 +1,6 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ProductOverlayComponent } from '../product-overlay/product-overlay.component';
 
 @Component({
   selector: 'app-product-card',
@@ -19,19 +21,21 @@ export class ProductCardComponent implements OnInit {
     this.showButton = false;
   }
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
-  showQuickButton() {
-    console.log('Something open')
-    this.showButton = true;
-  }
+  openDialog() {
+    const dialogRef = this.dialog.open(ProductOverlayComponent, {
+      minWidth: 800,
+      minHeight: 500
+    });
 
-  hideQuickButton() {
-    console.log('Something closed')
-    this.showButton = false;
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog was closed ${result}`);
+    });
+
   }
 
 }

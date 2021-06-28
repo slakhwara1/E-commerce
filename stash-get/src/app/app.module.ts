@@ -24,6 +24,10 @@ import { ProductOverlayComponent } from './shared/product/product-overlay/produc
 import { ProductReviewsComponent } from './shared/product/product-reviews/product-reviews.component';
 import { ProductFilterComponent } from './shared/product/product-filter/product-filter.component';
 import { ProductSearchComponent } from './shared/product/product-search/product-search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
+import { MatCommonModule } from '@angular/material/core';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -53,7 +57,10 @@ import { ProductSearchComponent } from './shared/product/product-search/product-
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    CommonModule
+    CommonModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
