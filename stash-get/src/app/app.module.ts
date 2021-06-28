@@ -9,21 +9,21 @@ import { RecentlyViewedComponent } from './home-page/recently-viewed/recently-vi
 import { SuggestedProductsComponent } from './home-page/suggested-products/suggested-products.component';
 import { HeaderComponent } from './header/header.component';
 import { ProductComponent } from './shared/product/product.component';
-import { ProductDescriptionComponent } from './shared/product-description/product-description.component';
-import { ProductReviewsComponent } from './shared/product-reviews/product-reviews.component';
-import { ProductOverlayComponent } from './shared/product-overlay/product-overlay.component';
-import { ProductCardComponent } from './shared/product-card/product-card.component';
-import { ProductFilterComponent } from './shared/product-filter/product-filter.component';
+import { ProductDescriptionComponent } from './shared/product/product-description/product-description.component';
+import { ProductCardComponent } from './shared/product/product-card/product-card.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { UserOrdersComponent } from './user-orders/user-orders.component';
 import { UserWishlistComponent } from './user-wishlist/user-wishlist.component';
-import { ProductCategoryComponent } from './shared/product-category/product-category.component';
-import { ProductCategoryGroupComponent } from './shared/product-category-group/product-category-group.component';
-import { ProductSearchComponent } from './shared/product-search/product-search.component';
+import { ProductCategoryComponent } from './shared/product/product-category/product-category.component';
+import { ProductCategoryGroupComponent } from './shared/product/product-category-group/product-category-group.component';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ListGroupComponent } from './shared/list-group/list-group.component';
 import { UserProfileDetailComponent } from './user-profile/user-profile-detail/user-profile-detail.component';
+import { ProductOverlayComponent } from './shared/product/product-overlay/product-overlay.component';
+import { ProductReviewsComponent } from './shared/product/product-reviews/product-reviews.component';
+import { ProductFilterComponent } from './shared/product/product-filter/product-filter.component';
+import { ProductSearchComponent } from './shared/product/product-search/product-search.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +35,7 @@ import { UserProfileDetailComponent } from './user-profile/user-profile-detail/u
     HeaderComponent,
     ProductComponent,
     ProductDescriptionComponent,
+    ProductCategoryComponent,
     ProductReviewsComponent,
     ProductOverlayComponent,
     ProductCardComponent,

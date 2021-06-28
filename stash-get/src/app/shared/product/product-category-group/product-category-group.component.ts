@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductCategoryGroupComponent implements OnInit {
 
-  productCategories = ['All','Computers','Electornics','Mobiles','Books'];
+  productCategories = ['All' , 'Laptops' , 'Mobiles' , 'Electronics' , 'Books'];
 
   constructor() { }
 
