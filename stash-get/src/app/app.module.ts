@@ -31,6 +31,9 @@ import {MatMenuModule} from '@angular/material/menu';
 import { ProductRatingsComponent } from './shared/product/product-ratings/product-ratings.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatInputModule} from '@angular/material/input';
+import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
+import { PaymentInfoComponent } from './payment-info/payment-info.component';
+import { PaymentDetailComponent } from './payment-detail/payment-detail.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +58,10 @@ import {MatInputModule} from '@angular/material/input';
     ProductSearchComponent,
     ListGroupComponent,
     UserProfileDetailComponent,
-    ProductRatingsComponent
+    ProductRatingsComponent,
+    CheckoutPageComponent,
+    PaymentInfoComponent,
+    PaymentDetailComponent
   ],
   imports: [
     BrowserModule,
