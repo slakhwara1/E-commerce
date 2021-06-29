@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RecentlyViewedComponent } from './recently-viewed.component';
+import { ProductCardGroupComponent } from './product-card-group.component';
 
-describe('RecentlyViewedComponent', () => {
-  let component: RecentlyViewedComponent;
-  let fixture: ComponentFixture<RecentlyViewedComponent>;
+describe('ProductCardGroupComponent', () => {
+  let component: ProductCardGroupComponent;
+  let fixture: ComponentFixture<ProductCardGroupComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RecentlyViewedComponent ]
+      declarations: [ ProductCardGroupComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RecentlyViewedComponent);
+    fixture = TestBed.createComponent(ProductCardGroupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

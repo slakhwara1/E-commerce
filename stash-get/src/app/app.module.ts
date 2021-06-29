@@ -4,9 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { FeaturedProductsComponent } from './home-page/featured-products/featured-products.component';
-import { RecentlyViewedComponent } from './home-page/recently-viewed/recently-viewed.component';
-import { SuggestedProductsComponent } from './home-page/suggested-products/suggested-products.component';
+import { ProductsOverviewComponent } from './shared/product/products-overview/products-overview.component';
 import { HeaderComponent } from './header/header.component';
 import { ProductComponent } from './shared/product/product.component';
 import { ProductDescriptionComponent } from './shared/product/product-description/product-description.component';
@@ -34,14 +32,13 @@ import {MatInputModule} from '@angular/material/input';
 import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 import { PaymentInfoComponent } from './payment-info/payment-info.component';
 import { PaymentDetailComponent } from './payment-detail/payment-detail.component';
+import { ProductCardGroupComponent } from './shared/product/product-card-group/product-card-group.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    FeaturedProductsComponent,
-    RecentlyViewedComponent,
-    SuggestedProductsComponent,
+    ProductsOverviewComponent,
     HeaderComponent,
     ProductComponent,
     ProductDescriptionComponent,
@@ -61,7 +58,8 @@ import { PaymentDetailComponent } from './payment-detail/payment-detail.componen
     ProductRatingsComponent,
     CheckoutPageComponent,
     PaymentInfoComponent,
-    PaymentDetailComponent
+    PaymentDetailComponent,
+    ProductCardGroupComponent
   ],
   imports: [
     BrowserModule,
