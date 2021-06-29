@@ -28,6 +28,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatCommonModule } from '@angular/material/core';
 import {MatMenuModule} from '@angular/material/menu';
+import { ProductRatingsComponent } from './shared/product/product-ratings/product-ratings.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,8 @@ import {MatMenuModule} from '@angular/material/menu';
     ProductCategoryGroupComponent,
     ProductSearchComponent,
     ListGroupComponent,
-    UserProfileDetailComponent
+    UserProfileDetailComponent,
+    ProductRatingsComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +64,9 @@ import {MatMenuModule} from '@angular/material/menu';
     CommonModule,
     BrowserAnimationsModule,
     MatDialogModule,
-    MatMenuModule
+    MatMenuModule,
+    MatProgressBarModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

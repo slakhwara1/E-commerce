@@ -10,6 +10,7 @@ import { ProductOverlayComponent } from '../product-overlay/product-overlay.comp
 export class ProductCardComponent implements OnInit {
 
   productUrl = 'https://www.mountaingoatsoftware.com/uploads/blog/2016-09-06-what-is-a-product.png';
+  productId = 3;
 
   showButton = false;
 
@@ -29,7 +30,7 @@ export class ProductCardComponent implements OnInit {
   openDialog() {
     const dialogRef = this.dialog.open(ProductOverlayComponent, {
       minWidth: 800,
-      minHeight: 500
+      minHeight: 500,
     });
 
     dialogRef.afterClosed().subscribe(result => {
