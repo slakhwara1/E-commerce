@@ -10,8 +10,8 @@ import { ProductComponent } from './shared/product/product.component';
 import { ProductDescriptionComponent } from './shared/product/product-description/product-description.component';
 import { ProductCardComponent } from './shared/product/product-card/product-card.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { UserOrdersComponent } from './user-orders/user-orders.component';
-import { UserWishlistComponent } from './user-wishlist/user-wishlist.component';
+import { UserOrdersComponent } from './user/user-orders/user-orders.component';
+import { UserWishlistComponent } from './user/user-wishlist/user-wishlist.component';
 import { ProductCategoryComponent } from './shared/product/product-category/product-category.component';
 import { ProductCategoryGroupComponent } from './shared/product/product-category-group/product-category-group.component';
 import { RouterModule } from '@angular/router';
@@ -33,7 +33,7 @@ import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 import { PaymentInfoComponent } from './payment-info/payment-info.component';
 import { PaymentDetailComponent } from './payment-detail/payment-detail.component';
 import { ProductCardGroupComponent } from './shared/product/product-card-group/product-card-group.component';
-
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -70,7 +70,8 @@ import { ProductCardGroupComponent } from './shared/product/product-card-group/p
     MatDialogModule,
     MatMenuModule,
     MatProgressBarModule,
-    MatInputModule
+    MatInputModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
